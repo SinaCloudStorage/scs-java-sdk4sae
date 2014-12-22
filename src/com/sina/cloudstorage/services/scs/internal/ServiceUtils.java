@@ -183,11 +183,15 @@ public class ServiceUtils {
             } else {
                 urlString += "&";
             }
-
+            
             String value = request.getParameters().get(param);
-            if (value != null)
-            	urlString += param + "=" + HttpUtils.urlEncode(value, false);
-            else
+            System.out.println("param:"+param+"   value:"+value);
+            if (value != null){
+            	if (!"ssig".equalsIgnoreCase(param))
+            		urlString += param + "=" + HttpUtils.urlEncode(value, false);
+            	else
+            		urlString += param + "=" + value;
+            }else
             	urlString += param;
         }
 
