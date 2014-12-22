@@ -4,6 +4,7 @@
 新浪云存储Java平台SDK为第三方应用提供了简单易用的API调用服务，使第三方客户端无需了解复杂的验证机制即可进行授权、上传、下载等文件操作。您可以通过**Maven**进行构建本项目或下载独立的[zip格式文件包](http://sdk.sinastorage.cn/scs-java-sdk-distribution/scs-java-sdk-0.0.1-SNAPSHOT-bin.zip?fn=scs-java-sdk-0.0.1-SNAPSHOT-bin.zip)
 >本文档详细内容请查阅：[SinaStorage’s documentation](http://open.sinastorage.com/)
 
+
 ##SDK 环境要求
 
 **Java 1.5+**
@@ -15,6 +16,7 @@
 - gson-2.2.4
 
 
+**[在线demo](http://localhost:8080/testsae)**
 
 ##快速上手
 
@@ -419,6 +421,7 @@
 			URL presignedUrl = conn.generatePresignedUrl("bucket名称", "文件路径", expiration, false);
 			System.out.println(presignedUrl);
 		}
+	
 	
 	
 For more detailed documentation, refer [here](http://open.sinastorage.com/)
