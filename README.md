@@ -15,7 +15,6 @@
 - gson-2.2.4
 
 
-**[在线demo](http://scstestjava.sinaapp.com)**
 
 ##快速上手
 
